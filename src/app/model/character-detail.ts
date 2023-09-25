@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 export interface CharacterDetail  {
+=======
+export interface CharacterDetail {
+>>>>>>> d8d17ee3e81de15705ad1e0dac974d369ac75f7c
   id: number
   name: string
   status: string

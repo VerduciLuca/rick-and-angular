@@ -8,6 +8,19 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./characters-list.component.scss']
 })
 export class CharactersListComponent implements OnInit{
+<<<<<<< HEAD
+=======
+
+  characters: CharacterDetail[] = [];
+
+  constructor(private dataServ: DataService){}
+
+  ngOnInit(): void {
+    // this.dataServ.getAllCharacters().subscribe(characters => this.characters = characters);
+    this.dataServ.allCharacters.subscribe(chars => this.characters = chars)
+  }
+
+>>>>>>> d8d17ee3e81de15705ad1e0dac974d369ac75f7c
 
   characters: CharacterDetail[] = []
 

@@ -9,4 +9,5 @@ import { CharacterDetail } from 'src/app/model/character-detail';
 export class CardComponent {
   @Input() character?: CharacterDetail;
 
+  @Input() character?: CharacterDetail;
 }
