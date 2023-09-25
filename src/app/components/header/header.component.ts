@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  constructor(public dataServ: DataService){
+
+  }
+
+  prevPage(){
+    this.dataServ.prevPage()
+  }
+
+  nextPage(){
+    this.dataServ.nextPage()
+  }
 
 }
